@@ -30,7 +30,7 @@ jobs:
           # Maps tcp port 5432 on service container to the host
           - 5432:5432
     container:
-      image: ghcr.io/DWH-course-materials/dbt-datavault-postgres:ci
+      image: ghcr.io/dwh-course-materials/dbt-datavault-postgres:ci
     steps:
       - uses: actions/checkout@v3
       - run: dbt --version
