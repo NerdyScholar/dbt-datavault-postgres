@@ -21,7 +21,7 @@ hashed_columns:
 
 {% set metadata_dict = fromyaml(yaml_metadata) %}
 
-{% set source_model = 'source_customers' %}
+{% set source_model = metadata_dict['source_model'] %}
 {% set derived_columns = metadata_dict['derived_columns'] %}
 {% set hashed_columns = metadata_dict['hashed_columns'] %}
 
